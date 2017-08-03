@@ -36,12 +36,13 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: 'rgb(255,255,200)',
   },
   welcome: {
-    fontSize: 20,
+    fontSize: 35,
     textAlign: 'center',
     margin: 10,
+    color: 'rgb(255,0,0)',
   },
   instructions: {
     textAlign: 'center',
