@@ -1,16 +1,4 @@
-import React, { Component } from 'react';
-import { AppRegistry, View } from 'react-native';
-import Home from './src/components/home/Home.js'
+import { AppRegistry } from 'react-native'
+import myApp from './src/app'
 
-class myApp extends Component {
-   render() {
-      return (
-         <View>
-            <Home />
-         </View>
-      );
-   }
-}
-export default myApp
-
-AppRegistry.registerComponent('myApp', () => myApp);
+AppRegistry.registerComponent('myApp', () => myApp)
