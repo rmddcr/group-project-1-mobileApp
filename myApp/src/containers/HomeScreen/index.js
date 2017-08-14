@@ -20,6 +20,7 @@ export default class HomeScreen extends Component {
           buttonStyle={styles.button}
           textStyle={styles.buttonText}
         />
+    
       </View>
     )
   }
