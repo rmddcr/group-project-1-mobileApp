@@ -14,19 +14,7 @@ const IMAGE_WIDTH = metrics.DEVICE_WIDTH * 0.8
 if (Platform.OS === 'android') UIManager.setLayoutAnimationEnabledExperimental(true)
 
 /**
- * The authentication screen.
- * It shows three different sub-screens:
- * - The opening screen, with the two buttons that redirect to the login/signup forms (if this.state.visibleForm === null)
- * - The signup form (if this.state.visibleForm === 'SIGNUP')
- * - The login form (if this.state.visibleForm === 'LOGIN')
- *
- * The app state (isLoggedIn, isLoading) and the login/signup functions are received as props from src.app.js
- *
- * The animations are delegated to:
- * - react-native-animatable: for the simpler animations of the components (in e.g. bounceIn animation of the logo)
- * - react-native's LayoutAnimation: for the form show/hide animation
- * - react-native's KeyboardAvoidingView: for applying a bottom padding when a keyboard show-up is detected
- *
+ * The authentication screen
  */
 export default class AuthScreen extends Component {
   static propTypes = {

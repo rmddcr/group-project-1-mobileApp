@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import { StyleSheet, View } from 'react-native'
+import { StyleSheet, View ,Text} from 'react-native'
 
 import CustomButton from '../../components/CustomButton'
 
@@ -14,13 +14,16 @@ export default class HomeScreen extends Component {
   render () {
     return (
       <View style={styles.container}>
+        <Text style={styles.text}> Login screen goes hear</Text>
+
+
         <CustomButton
           text={'Logout'}
           onPress={this.props.logout}
           buttonStyle={styles.button}
           textStyle={styles.buttonText}
         />
-    
+
       </View>
     )
   }
@@ -31,6 +34,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
+    //color:'rgb(130,100,3'
+  },
+  text: {
+    color: 'rgb(230,120,40)'
   },
   button: {
     backgroundColor: '#1976D2',
